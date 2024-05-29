@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Cheltenham Condensed Bold';
+    src: url('../fonts/Cheltenham Condensed Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Cheltenham Condensed Bold', sans-serif;
+    font-weight: 700;
+    text-align: center; /* Center-align text within the container */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px; /* Add some padding to move away from the edges */
+}
+
+h1 {
+    font-size: 3em; /* Increase font size for h1 */
+    margin: 0 0 10px 0; /* Add some margin below h1 */
+}
+
+p {
+    margin: 0;
+}
