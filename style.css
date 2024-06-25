@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Cheltenham Condensed Bold';
+    src: url('../fonts/Cheltenham Condensed Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the navbar and container vertically */
+    font-family: 'Cheltenham Condensed Bold', sans-serif;
+    font-weight: 700;
+    text-align: center; /* Center-align text within the container */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+    padding: 20px; /* Add some padding to move away from the edges */
+    padding-top: 60px; /* Add top padding to avoid overlap with fixed navbar */
+    width: 100%; /* Ensure container takes the full width */
+}
+
+h1 {
+    font-size: 3em; /* Increase font size for h1 */
+    margin: 0 0 10px 0; /* Add some margin below h1 */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+p {
+    margin: 0;
+    text-align: left; /* Ensure the text within the paragraph is left-aligned */
+    font-size: 1.2em;
+}
+
+#gameContainer {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.snake-dot {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}
